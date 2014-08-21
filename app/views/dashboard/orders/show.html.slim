@@ -1,0 +1,47 @@
+.row.fix_row
+  .col-md-12.col-sm-12.col-sx-12
+    .panel.panel-default
+      .panel-heading.clearfix
+        i.icon-calendar
+        h3.panel-title 要点的菜
+      .panel-body
+        p.big.label.label-info = "店名: #{@order.shop.name}"
+        p.small = "地址: #{@order.shop.address}"
+        p.small = "电话: #{@order.shop.tel}"
+        p.small = "网址: #{@order.shop.source_url}"
+        ul#total_detail
+         - @hash.each do |item|
+          li = "#{item.first}----#{item.last}"
+        - if @order.is_success == 1
+          = link_to '点餐结束', dashboard_finish_check_path(@order), class: 'btn btn-danger', method: 'POST'
+
+.row.fix_row
+  .col-md-8.col-sm-8.col-sx-8
+    .panel.panel-default
+      .panel-heading.clearfix
+        i.icon-calendar
+        h3.panel-title 菜品
+      .panel-body
+        .row
+          -@order.shop.product_items.each do |item|
+            .col-sm-6.col-md-3
+              .thumbnail
+                = image_tag(item.image_url, class: 'img-responsive', alt: item.name) 
+                .caption.caption_fix
+                  p.item_name = item.name
+                  - if @order.is_success == 1
+                    p
+                      = link_to "加一个", dashboard_add_item_count_path(item, @order.id), class: "btn btn-primary", method: 'POST', remote: true 
+                      = link_to "减一个", dashboard_sub_item_count_path(item, @order.id), class: "btn btn-default", method: 'POST',remote: true 
+
+
+  .col-md-4.col-sm-4.col-sx-4
+    .pin-cart
+      .pinned.note-container 
+        .note
+          h3 我点的餐
+          div
+            ul#cart_detail
+              - @hash.each do |item|
+                li = "#{item.first} * #{item.last}"
+

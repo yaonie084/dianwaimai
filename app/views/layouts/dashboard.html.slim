@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    title 车牛点餐 - 首页
+    meta charset="utf-8" 
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    
+    = csrf_meta_tags
+  body
+    .container
+      .top-bar
+        .logo
+          | 车牛点餐
+          sup
+            i.icon-glass
+        /! Icon nav start
+        ul#icon-nav
+          li
+            a data-original-title="" href="#" title="" 
+              i.icon-bell
+              span.count-label
+          li
+            a data-original-title="" href="#" title="" 
+              i.icon-comment-alt
+              span.count-label.count-lb-yellow
+          li
+            a data-original-title="" href="#" title="" 
+              i.icon-envelope-alt
+              span.count-label.count-lb-green
+        /! Icon nav end
+      header.navbar role="navigation" 
+        .navbar-header
+          button.navbar-toggle data-original-title="" data-target=".bs-navbar-collapse" data-toggle="collapse" title="" type="button" 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand data-original-title="" href="#" title=""  &nbsp;
+        nav.collapse.navbar-collapse.bs-navbar-collapse role="navigation" 
+          ul.nav.navbar-nav
+            li
+              = link_to "列表", dashboard_root_url()
+            li
+              = link_to "管理", dashboard_orders_url()
+
+          /! Mini navigation start
+          ul.nav.navbar-nav.navbar-right.hidden-sm.hidden-xs
+            li.dropdown
+              a.dropdown-toggle data-original-title="" data-toggle="dropdown" href="#" title="" 
+                i.icon-user
+                = current_user.username
+                b.caret
+              ul.dropdown-menu
+                li
+                  = link_to "退出", destroy_user_session_path(), method: :delete
+
+      = yield
+
+      = javascript_include_tag 'application', 'data-turbolinks-track' => true

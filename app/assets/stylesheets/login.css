@@ -1,0 +1,359 @@
+#titlestyle{
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+    padding-bottom: 0px;
+    box-shadow: rgb(88, 87, 84) 0px 0px 12px 0px;
+
+    border-radius: 10px 10px 10px 10px;
+    background: url("/assets/dev_img/banner.png") no-repeat scroll 0 0 transparent;
+}
+.page-title{
+    border: hidden;
+    margin-bottom: 0px;
+}
+
+#user-details{
+    padding-top: 18px;
+}
+#dashboard_status{
+    background-color: #ffffff;
+    box-shadow: rgb(88, 87, 84) -1px -1px 2px 0px;
+    border-radius: 10px 10px 10px 10px;
+    float: right;
+    margin-top: -9px;
+    margin-right: -10px;
+    margin-bottom: 3px;
+    text-align: center;
+    filter:alpha(opacity=70);  /*支持 IE 浏览器*/
+    -moz-opacity:0.70; /*支持 FireFox 浏览器*/
+    opacity:0.70;  /*支持 Chrome, Opera, Safari 等浏览器*/
+}
+.label.label-info{
+    font-size: 13px;
+}
+.box{
+    background-color:#ffffff;
+    width: 100%;
+}
+.sound{
+    margin-top:5px;
+    margin-left:1000px;
+}
+
+#demo {
+    font-size:10px;
+    color:#529dc9;
+    margin-top: 10px;
+    text-align:left;
+    white-space: nowrap;
+}
+.btn-group{
+    text-align:left;
+}
+button.btn.btn-warning.btn-lg{
+    color: #4d4d4d;
+    background-color: white;
+    border-color: rgb(217, 217, 217);
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    height:34px;
+    line-height: 17px;
+}
+/*登陆*/
+body#login-body{
+    margin:120px 0
+}
+#login-container{
+    position:relative;
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+@media(max-width:767px)
+{
+    #login-container{
+        width:90%;
+    }
+}
+#login-container .row>div:last-child{
+    margin-bottom:0;
+}
+#login-container #logo{
+    position:absolute;
+    top:-50px;
+    left:50%;
+    margin-left:-50px;
+    z-index:100;
+    width:100px;
+    height:100px;
+    background-color:#fff;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+    text-align:center;
+    -webkit-box-shadow:0 0 1px rgba(0,0,0,.2);
+    box-shadow:0 0 1px rgba(0,0,0,.2);
+    line-height: 100px;
+    color: rgb(70, 151, 198);
+    display: inline;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+#login-container #logo sup{
+    position:absolute;
+    top:15px;
+    right:18px;
+    z-index:-100;
+}
+#login-container #logo sup i{
+     font-size:64px;
+     color:#f6a363;
+ }
+#login-container #login h3{
+    margin:20px auto;
+}
+#login-container #login h3 span{
+    color:#4697c6;
+}
+#login{
+    position:relative;
+    padding:60px 25px 25px;
+    margin-bottom:1em;
+    background-color:#FFF;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow:0 0 1px rgba(0,0,0,.3);
+    box-shadow:0 0 1px rgba(0,0,0,.3)
+}
+#login #login-form{
+    padding:0;
+    margin-top:2em;
+    margin-bottom:2em;
+    text-align:left
+}
+#login #login-form label{
+    display:none
+}
+#login #login-form .form-control{
+    height:40px;
+    padding-top:8px;
+    padding-bottom:8px
+}
+#login #login-btn{
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:20px
+}
+@media (min-width:768px){
+    #login-container{
+        width:360px
+    }
+    #login-container .row>div{
+        margin-bottom:0
+    }
+    #login #login-form{
+        padding:0 25px;
+        text-align:left
+    }
+}
+/*用户信息*/
+.custom-info{
+    margin-left: 10px;
+    padding-left: 10px;
+
+}
+#info-ul button{
+    /*清除子菜单的缩进值*/
+    margin: 0px;
+    float:left;
+    text-align: center;
+    width:auto;
+    padding-left:10px ;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border:1px solid rgb(57, 138, 185);
+    box-shadow: rgb(57, 138, 185) -1px -1px 2px 0px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #ffffff;
+}
+#menu1{
+
+    border: 1px solid rgb(57, 138, 185);
+    list-style: none;
+    width: 1121px;
+    box-shadow: rgb(57, 138, 185) -1px -1px 2px 0px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+#menu2{
+    display:none;
+    border: 1px solid rgb(57, 138, 185);
+    list-style: none;
+    width: 1121px;
+    box-shadow: rgb(57, 138, 185) -1px -1px 2px 0px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+#menu3{
+    display:none;
+    border: 1px solid rgb(57, 138, 185);
+    list-style: none;
+    width: 1121px;
+    box-shadow: rgb(57, 138, 185) -1px -1px 2px 0px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+#menu4{
+    display:none;
+    border: 1px solid rgb(57, 138, 185);
+    list-style: none;
+    width: 1121px;
+    box-shadow: rgb(57, 138, 185) -1px -1px 2px 0px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+}
+.le-style{
+    padding: 10px;
+}
+.le-style sup{
+    position:relative;
+    top: 0px;
+}
+.le-style sup i{
+    font-size: 20px;
+}
+.text-style{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.text-style1{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+fieldset a {
+    color: rgb(57, 138, 185);
+}
+fieldset .text-style label:after {
+    color: #f00;
+    content: "■";
+    font-size: 13px;
+    padding-left: 5px;
+}
+#main_ProfileDetails_PersonalDetails_pnAcceptNewsletters{
+    padding-bottom: 40px;
+}
+#main_PublicProfileSettings_ImgAvatar{
+    width: 60px;
+    height: 60px;
+}
+#main_PublicProfileSettings_TbDescription{
+    margin-bottom: 40px;
+}
+#weekcheck{
+    margin-bottom: 40px;
+}
+#password{
+    margin-bottom: 40px;
+}
+.form-actions{
+    margin: 20px;
+}
+.savebtn{
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0px 0px inset, rgba(0, 0, 0, 0.2) -1px -1px 0px 0px inset;
+    -webkit-rtl-ordering: logical;
+    -webkit-writing-mode: horizontal-tb;
+    align-items: flex-start;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -webkit-linear-gradient(top, rgb(57, 128, 187) 0%, rgb(57, 138, 185) 100%);
+    background-origin: padding-box;
+    border-bottom-color: rgb(57, 138, 185);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(57, 138, 185);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(57, 138, 185);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(57, 138, 185);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0px 0px inset, rgba(0, 0, 0, 0.2) -1px -1px 0px 0px inset;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Open Sans', 'Lucida Grande', 'Lucida Sans', Arial, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    height: 40px;
+    letter-spacing: -0.5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 13px;
+    padding-right: 13px;
+    text-align: center;
+    text-shadow: rgb(57, 138, 185) 1px 1px 0px;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 86px;
+    writing-mode: lr-tb;
+}
+#resetbtn{
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-rtl-ordering: logical;
+    -webkit-writing-mode: horizontal-tb;
+    align-items: flex-start;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(215, 212, 207);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    border-left-color: rgb(215, 212, 207);
+    border-right-color: rgb(215, 212, 207);
+    border-top-color: rgb(215, 212, 207);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-top-style: none;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    height: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none solid rgb(215, 212, 207);
+    vertical-align: middle;
+    white-space: pre;
+    width: 86px;
+    writing-mode: lr-tb;
+}

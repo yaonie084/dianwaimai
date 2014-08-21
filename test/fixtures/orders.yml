@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  source_url: MyString
+  finish_time: 2014-08-19 22:51:01
+  is_success: 1
+  error_msg: MyString
+  content: MyText
+
+two:
+  source_url: MyString
+  finish_time: 2014-08-19 22:51:01
+  is_success: 1
+  error_msg: MyString
+  content: MyText

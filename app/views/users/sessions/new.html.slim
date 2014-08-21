@@ -1,0 +1,8 @@
+= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {id: 'login-form', class: 'form'}) do |f|
+  .form-group
+    = f.input :login, required: false, autofocus: true, input_html: { class: 'form-control', placeholder: "用户名/邮箱" }
+  .form-group
+    = f.input :password, required: false, input_html: { class: 'form-control', placeholder: "密码" }
+  .form-group
+    = f.button :submit, "登录", class: 'btn btn-success btn-block', id: 'login-btn'
+= link_to '注册新账户', new_user_registration_path(), class: 'btn btn-default'

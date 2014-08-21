@@ -1,0 +1,41 @@
+.row.fix_row
+  .col-md-6.col-sm-6.col-sx-6
+    .panel.panel-default
+      .panel-heading.clearfix
+        i.icon-list
+        h3.panel-title 点餐
+      .panel-body
+        .table-responsive
+          = simple_form_for @order, url: dashboard_orders_url() do |f|
+            = f.input :source_url, as: :url, label: '淘点点店铺地址', input_html: {class: 'form-control'}, label_html: { class: 'control_label' }, wrapper_html: { class: 'wrapper' }
+            = f.input :finish_time, label: '时间', input_html: {class: ''}, label_html: { class: 'control_label' }, wrapper_html: { class: 'wrapper' }
+            = f.input :content, as: :string, label: '内容', input_html: {class: 'form-control'}, label_html: { class: 'control_label' }, wrapper_html: { class: 'wrapper' }
+            = f.button :submit, "提交", class: 'wrapper btn btn-info'
+
+
+  .col-md-6.col-sm-6.col-sx-6
+    .panel.panel-default
+      .panel-heading.clearfix
+        i.icon-list
+        h3.panel-title 我没完成的订单
+      .panel-body
+        .table-responsive
+          table.table.table.-bordered.no-margin
+            thead
+              tr
+                th style="width:10%" ID
+                th style="width:20%" 结束时间
+                th style="width:15%" 报名人数
+                th style="width:34%" 餐厅
+                th style="width:10%" 状态
+                th style="width:10%"  \&nbsp;
+            tbody
+              - @orders.each do |order|
+                tr
+                  td =order.id
+                  td =order.finish_time.strftime('%Y-%m-%d %H:%M')
+                  td 12
+                  td = shop_name(order)
+                  td = success_status(order.is_success)
+                  - if order.is_success > 0
+                    td  = link_to '查看', dashboard_order_path(order), class: 'label label-success'              

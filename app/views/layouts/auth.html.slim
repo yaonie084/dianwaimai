@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title 车牛点餐 - Login
+    meta charset="utf-8" 
+    meta content="width=device-width, initial-scale=1.0" name="viewport"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  body#login-body
+    #login-container
+      #logo
+        | 
+        sup
+          i.icon-glass
+      #login
+        h3
+          | 车牛
+          span 点餐
+        h5 人是铁，饭是钢
+        
+        = yield

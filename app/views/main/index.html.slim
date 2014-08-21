@@ -1,0 +1,11 @@
+h1 Main#index
+p Find me in app/views/main/index.html.slim
+
+div
+  p = current_user.username
+  p = current_user.phone_number
+  p = current_user.email
+  p = link_to "退出", destroy_user_session_path(), method: :delete
+
+div
+  p = link_to "用户中心", dashboard_root_path()

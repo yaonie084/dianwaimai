@@ -1,0 +1,35 @@
+.row.fix_row
+  .col-md-12.col-sm-12.col-sx-12
+    .panel.panel-default
+      .panel-heading.clearfix
+        i.icon-list
+        h3.panel-title 点餐列表
+      .panel-body
+        .table-responsive
+          table.table.table.-bordered.no-margin
+            thead
+              tr
+                th style="width:20%" 
+                  | ID
+                th style="width:15%" 
+                  | 发起人
+                th style="width:15%" 
+                  | 结束时间
+                th style="width:20%" 
+                  | 报名人数
+                th style="width:20%" 
+                  | 餐厅
+                th style="width:10%" 
+                  | \&nbsp;
+            tbody
+
+              - @orders.each do |order|
+                tr
+                  td = order.id
+                  td = order.originzer.username
+                  td = order.finish_time.strftime('%Y-%m-%d %H:%M:%S')
+                  td 12
+                  td = shop_name(order)
+                  td
+                    = link_to '加入', dashboard_order_path(order), class: 'label label-success'
+              

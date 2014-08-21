@@ -1,0 +1,130 @@
+.my-todo{
+    font-size: 18px;
+    color: #ff0000;
+}
+#avatar_box {
+    width: 120px !important;
+}
+
+#avatar_box .avatar-frame {
+    margin-right: 10px;
+}
+
+a.avatar-frame, span.avatar-frame {
+    width: 117px;
+    display: block;
+    height: 135px;
+    background: url("/assets/dev_img/avatar-frame.png") no-repeat scroll 0 0 transparent;
+    position: relative;
+}
+
+.fleft {
+    text-align: left;
+    float: left!important;
+}
+
+a.avatar-frame img, span.avatar-frame img {
+    height: 100px;
+    width: 100px;
+    margin: 8px 0 0 8px;
+}
+
+#user-details {
+
+}
+
+#user-details h3 {
+    color: #535353;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+    height: 33px;
+    overflow: hidden;
+    line-height: 15px;
+    width: 148px;
+}
+
+#user-details .user-name {
+    color: #535353;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+    width: 145px;
+    height: 47px;
+    overflow: hidden;
+    line-height: 15px;
+    text-decoration: underline;
+}
+
+.normal_number {
+    font-size: 24px;
+}
+
+#money-table p{
+    margin-bottom: 0px !important;
+}
+
+.pagination_box {
+    margin-top: 8px;
+}
+
+.pagination_box .pagination {
+    float: right;
+}
+
+.pagination_detail {
+    float: left;
+}
+
+.mini-box {
+    min-height: 120px;
+    padding: 25px;
+}
+
+.mini-box .box-icon.rounded {
+    border-radius: 50%;
+}
+.mini-box .box-icon {
+    display: block;
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 4px;
+}
+.bg-success {
+    background-color: #94b758;
+    color: #fff;
+}
+
+.icon-fixed-width-header{
+    font-size: 41px !important;
+}
+
+.header_left{
+    text-align: left !important;
+}
+
+.fix-report-botton {
+    text-align: right;
+    margin-bottom: 5px;
+}
+.fix_row{
+    margin-top: 9px;
+}
+
+.wrapper{
+    margin-top: 18px;
+}
+
+.caption_fix{
+    margin-left: 18px;
+}
