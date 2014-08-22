@@ -12,7 +12,7 @@ body {
   font: normal 12px 'Open Sans', arial, sans-serif;
   line-height: 18px;
   color: #333333;
-  background: url(/assets/dev_img/subtle_dots.png); }
+  background: url(/static/subtle_dots.png); }
 
 a {
   color: black;
