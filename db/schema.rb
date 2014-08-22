@@ -13,21 +13,11 @@
 
 ActiveRecord::Schema.define(version: 20140821130427) do
 
-  create_table "member_order_ables", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "order_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "member_order_ables", ["order_id"], name: "index_member_order_ables_on_order_id", using: :btree
-  add_index "member_order_ables", ["user_id"], name: "index_member_order_ables_on_user_id", using: :btree
-
   create_table "orders", force: true do |t|
     t.string   "source_url",               null: false
-    t.datetime "finish_time",              null: false
-    t.integer  "is_success",  default: 0
     t.string   "error_msg",   default: ""
+    t.integer  "is_success",  default: 0
+    t.datetime "finish_time",              null: false
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
