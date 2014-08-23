@@ -50,6 +50,8 @@ gem 'sidekiq'
 
 gem 'capybara', '~> 2.1.0'
 
+gem 'enumerize' # 枚举
+
 # gem 'capybara-screenshot'
 
 # gem 'capybara-webkit'
