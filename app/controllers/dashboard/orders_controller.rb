@@ -2,6 +2,7 @@ class Dashboard::OrdersController < Dashboard::BaseController
   def index
     @order = Order.new
     @orders = current_user.origin_orders
+
   end
 
   def create
@@ -37,5 +38,5 @@ class Dashboard::OrdersController < Dashboard::BaseController
     params.require(:order).permit(:source_url, :finish_time, :content)
   end
 
-  
+
 end
