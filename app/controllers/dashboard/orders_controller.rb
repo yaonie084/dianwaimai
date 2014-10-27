@@ -2,6 +2,7 @@ class Dashboard::OrdersController < Dashboard::BaseController
   def index
     @order = Order.new
     @orders = current_user.origin_orders
+
   end
 
   def create
